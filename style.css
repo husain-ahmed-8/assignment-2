@@ -67,7 +67,6 @@ button,
   color: white;
   border: none;
   cursor: pointer;
-  transition: 0.2s;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 1px;
@@ -206,7 +205,7 @@ section.plants {
 
 img.trusted-badge {
   position: absolute;
-  width: 160px;
+  width: 160px !important;
   height: 160px !important;
   top: -80px;
   right: -80px;
@@ -214,11 +213,14 @@ img.trusted-badge {
 }
 
 .lover-image-wrapper img {
-  height: 100%;
+  /* height: 100%; */
+  width: 100%;
+  max-width: 450px;
 }
 
 .lover-text {
   width: 45%;
+  padding-left: 50px;
 }
 
 .lover-text h2 {
@@ -375,4 +377,94 @@ footer .container {
   height: 36px;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+  .container {
+    width: 90%;
+  }
+  .nav-menu {
+    display: none;
+  }
+  .hero .container {
+    flex-direction: column-reverse;
+    height: auto;
+    width: 100%;
+  }
+  .hero-text {
+    width: 90%;
+    padding-top: 25px;
+  }
+  .hero-img img {
+    width: 350px;
+    padding-top: 30px;
+  }
+  .plants-text p {
+    width: auto;
+  }
+  .product-card {
+    width: 47%;
+  }
+  img.trusted-badge {
+    display: none;
+  }
+  .plant-lover .container {
+    flex-direction: column;
+  }
+  .lover-image-wrapper {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .lover-text {
+    width: 100%;
+    padding-left: 0px;
+  }
+  section.deals .container {
+    height: auto;
+  }
+  .deals-text {
+    margin-bottom: 30px;
+  }
+  .deals-text p {
+    width: 100%;
+  }
+  .deals-grid {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "one"
+      "two"
+      "three";
+  }
+  .deals-grid div {
+    padding: 70px 0px;
+  }
+  .deal-card-1 h3,
+  .deal-card-2 h3,
+  .deal-card-3 h3 {
+    font-size: 22px;
+  }
+  .join-section {
+    background-position: bottom;
+  }
+  .join-section form {
+    width: 80%;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  .footer-brand {
+    width: 100%;
+  }
 }
