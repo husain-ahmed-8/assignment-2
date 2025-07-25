@@ -306,7 +306,8 @@ section.deals .container {
 }
 
 .deal-card-1 a,
-.deal-card-2 a {
+.deal-card-2 a,
+.deal-card-3 a {
   text-decoration: underline;
 }
 
