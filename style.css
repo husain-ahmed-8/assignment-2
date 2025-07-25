@@ -1,0 +1,73 @@
+/* ============== common style ============== */
+:root {
+  --main-color: #ff6811;
+  --scnd-color: #00000080;
+  --noto: "Noto Serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  color: black;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.subtitle {
+  color: var(--scnd-color);
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: var(--noto);
+}
+
+h1 {
+  font-size: 55px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h1 span,
+h2 span {
+  color: var(--main-color);
+}
+
+/* Buttons */
+.btn-add {
+  width: 100%;
+  height: 35px;
+  background: var(--main-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
