@@ -17,7 +17,7 @@ body {
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 
@@ -28,6 +28,7 @@ a {
 
 .subtitle {
   color: var(--scnd-color);
+  line-height: 20px;
 }
 
 /* Headings */
@@ -70,4 +71,75 @@ h2 span {
   font-size: 12px;
   letter-spacing: 1px;
   word-spacing: 2px;
+}
+
+/* ============== custom style ============== */
+
+/* navbar */
+header {
+  padding-top: 40px;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  margin-right: auto;
+  height: 60px;
+}
+
+.nav-logo img {
+  height: 60px;
+}
+
+.nav-menu a {
+  padding: 10px 10px;
+  display: inline-block;
+  color: var(--scnd-color);
+}
+
+.nav-menu a.active {
+  color: black;
+  font-weight: 600;
+}
+
+.nav-cart {
+  padding-left: 20px;
+}
+
+.nav-cart a img {
+  width: 25px;
+  margin-right: 5px;
+}
+
+.nav-cart a {
+  display: flex;
+  align-items: center;
+  letter-spacing: 1px;
+}
+
+/* hero section */
+.hero .container {
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 50px;
+}
+
+.hero .hero-text h1 {
+  padding-bottom: 20px;
+}
+
+.hero p.subtitle {
+  width: 85%;
+}
+
+.hero-img img {
+  width: 500px;
+}
+
+.hero-img {
+  display: flex;
 }
